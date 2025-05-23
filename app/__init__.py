@@ -1,5 +1,8 @@
 from flask import Flask
 from app.extensions import db,migrate
+from app.controllers.course import course
+from app.controllers.program import program
+from app.controllers.student import student
 
 
 #application factory function
