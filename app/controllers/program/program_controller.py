@@ -4,7 +4,7 @@ from app.models.program_model import Program
 from app.extensions import db
 
 #i am creating a blueprint for my model program 
-program = Blueprint("program", __name__, url_prefix='/api/v1/program')
+program = Blueprint('program', __name__, url_prefix='/api/v1/program')
 
 #i am creating an endpoint for creating a new program
 @program.route('/create', methods=['POST'])

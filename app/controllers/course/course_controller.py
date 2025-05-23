@@ -1,10 +1,10 @@
 from flask import Blueprint , request , jsonify
-from status_codes import HTTP_400_BAD_REQUEST , HTTP_409_CONFLICT , HTTP_201_CREATED ,HTTP_500_INTERNAL_SERVER_ERROR
+from app.status_codes import HTTP_400_BAD_REQUEST , HTTP_409_CONFLICT , HTTP_201_CREATED ,HTTP_500_INTERNAL_SERVER_ERROR
 from app.models.course_model import Course
 from app.extensions import db
 
 #i am creating a blueprint for my model course
-course = Blueprint('program', __name__, url_prefix='/api/v1/course')
+course = Blueprint('course', __name__, url_prefix='/api/v1/course')
 
 #i am creating an endpoint for creating a new program
 @course.route('/create', methods=['POST'])
